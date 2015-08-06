@@ -7,7 +7,6 @@ class Fixnum
     dimes = 0
     nickels = 0
 
-
     if self >= 25
       quarters = self/25
       remainder = self % 25
@@ -23,11 +22,18 @@ class Fixnum
 
     pennies = remainder
 
-    puts quarters
-    puts dimes
-    puts nickels
-    puts pennies
+    @coin_quantities = {}
     
+    @coin_quantities["quarters"] = quarters
+    @coin_quantities["dimes"] = dimes
+    @coin_quantities["nickels"] = nickels
+    @coin_quantities["pennies"] = pennies
+    #
+    # puts quarters
+    # puts dimes
+    # puts nickels
+    # puts pennies
+
   end
 
 end

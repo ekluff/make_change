@@ -7,8 +7,7 @@ get('/') do
   erb(:index)
 end
 
-
-  get('/result') do
-    erb(:result)
-param.fetch('user_input')  
+get('/result') do
+  erb(:result)
+  params.fetch('user_input')
 end
