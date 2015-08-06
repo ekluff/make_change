@@ -9,7 +9,7 @@ end
 
 get('/result') do
 
-  @coin_quantities = params.fetch('user_input').make_change()
+  @coin_quantities = params.fetch('user_input').to_i.make_change()
 
   @quarters = @coin_quantities.fetch('quarters')
   @dimes = @coin_quantities.fetch('dimes')
@@ -17,7 +17,6 @@ get('/result') do
   @pennies = @coin_quantities.fetch('pennies')
 
   @coin_phrase_array = []
-
 
     if @quarters > 0
       @coin_phrase_array.push(if @quarters == 1
