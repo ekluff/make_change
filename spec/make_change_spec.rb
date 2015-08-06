@@ -7,5 +7,8 @@ describe('Fixnum#make_change') do
     expect(76.make_change()).to(eq(3))
   end
 
+  it('return remander of change to self') do
+      expect(76.make_change()).to(eq(1))
+  end
 
 end
