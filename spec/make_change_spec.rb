@@ -7,8 +7,16 @@ describe('Fixnum#make_change') do
     expect(76.make_change()).to(eq(3))
   end
 
-  it('return remander of change to self') do
+  it('returns remainder after calculating divisibility') do
       expect(76.make_change()).to(eq(1))
+  end
+
+  it('returns the number of times an interger is divisible by 10') do
+    expect(10.make_change()).to(eq(1))
+  end
+
+  it('returns the number of times an interger is divisible by 5') do
+    expect(5.make_change()).to(eq(1))
   end
 
 end
