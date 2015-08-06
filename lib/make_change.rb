@@ -22,17 +22,7 @@ class Fixnum
 
     pennies = remainder
 
-    @coin_quantities = {}
-    
-    @coin_quantities["quarters"] = quarters
-    @coin_quantities["dimes"] = dimes
-    @coin_quantities["nickels"] = nickels
-    @coin_quantities["pennies"] = pennies
-    #
-    # puts quarters
-    # puts dimes
-    # puts nickels
-    # puts pennies
+    coin_quantities = { "quarters" => quarters , "dimes" => dimes , "nickels" => nickels , "pennies" => pennies }
 
   end
 
